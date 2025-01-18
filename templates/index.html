@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,4 +52,59 @@
     </div>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body>
+    <div class="background-blur"></div>
+    <div class="container">
+        <nav class="navbar">
+            <a href="#" class="nav-link" id="homeLink">Home</a>
+            <a href="#" class="nav-link" id="aboutLink">About</a>
+        </nav>
+        <header id="homeSection">
+            <h1>🌱 Plant Disease Recognition</h1>
+            <p>Upload an image of your plant to detect possible diseases.</p>
+        </header>
+        <main id="uploadSection">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="file-upload">
+                    <input type="file" name="file" id="fileInput" accept="image/*" required>
+                    <label for="fileInput">Choose Image</label>
+                </div>
+                <button type="submit" class="btn">Analyze</button>
+            </form>
+            <div id="loader" class="hidden">
+                <div class="spinner"></div>
+                <p>Analyzing image...</p>
+            </div>
+            <div id="predictionResult"></div>
+        </main>
+        <section id="aboutSection" class="hidden">
+            <h2>About</h2>
+            <p>
+                This Plant Disease Recognition System uses AI technology to help farmers and plant enthusiasts identify
+                potential plant diseases.
+                Simply upload a clear image of your plant, and the system will provide a diagnosis. Empowering
+                agriculture with AI!
+            </p>
+        </section>
+        <footer>
+            <p>&copy; 2025 PlantHealthAI | Empowering Farmers with AI |<br> By Abbas Nm</p>
+        </footer>
+    </div>
+</body>
+
+>>>>>>> c5f210062be4a115b0cd27f1071f21f7e3eb0929
 </html>
