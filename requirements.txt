@@ -11,3 +11,4 @@ gunicorn==23.0.0
 keras==2.10.0
 pillow==11.0.0
 h5py==3.12.1
+flask_cors==5.0.0

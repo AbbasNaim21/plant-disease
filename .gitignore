@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+*.pkl
+.env
+.vercel
+*.ipynb
+main.py
+
+# Ignore the test directory
+test/
+
+# Ignore the train directory
+train/
+
+# Ignore the valid directory
+valid/
+
+training_history.json
